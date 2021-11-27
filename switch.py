@@ -155,7 +155,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     email = config.get("email", None)
     password = config.get("password", None)
     if email == None or password == None:
-        _LOGGER.error("Missing email, username config")
+        _LOGGER.error("Missing email, password configuration")
         return False
     _LOGGER.info(" === === === EZPlug === === ===")
     _LOGGER.info("Made by: br0kenpixel")
